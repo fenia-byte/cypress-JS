@@ -1,12 +1,6 @@
 class ABTesting {
-
-    NAMES={
-        contentText:"Also known as split testing",
-      }
-
-
-
-
+  NAMES = {
+    contentText: "Also known as split testing.",
+  };
 }
-
-export  const abTesting=new ABTesting;
+export const abTesting = new ABTesting();
