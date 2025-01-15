@@ -1,5 +1,5 @@
 
-function makeid(length) {
+export function makeid(length=10) {
     let emailName='@gmail.com'
     let result = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -11,5 +11,3 @@ function makeid(length) {
     }
     return `${result}${emailName}`;
 }
-
-console.log(makeid(15));
