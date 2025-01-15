@@ -1,6 +1,5 @@
 import { brokenImages } from "../../Pages/BrokenImages";
 import { basePage } from "../../Pages/Base";
-import { LOCATORS } from "../../utils/locators";
 
 describe("Broken_Images", () => {
   it("Verify the functionality of Broken Images button", () => {

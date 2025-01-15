@@ -1,13 +1,22 @@
+import { basePage } from "../Pages/Base";
+import { disappearingElements } from "../Pages/DisappearingElements";
 
-export function makeid(length=10) {
-    let emailName='@gmail.com'
-    let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    const charactersLength = characters.length;
-    let counter = 0;
-    while (counter < length) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-      counter += 1;
+export function reloadAndCheck(retries) {
+      cy.reload();
+      basePage
+        .getExample()
+        .get("ul")
+        .get("li")
+        .last()
+        .then(($lastLi) => {
+          if (
+            $lastLi.text() !== disappearingElements.NAMES.buttons[4] &&
+            retries > 0
+          ) {
+            retries--;
+            reloadAndCheck(); // Retry reloading and checking
+          } else if (retries === 0) {
+            throw new Error('Max retries reached and last li is not "Gallery"');
+          }
+        });
     }
-    return `${result}${emailName}`;
-}
