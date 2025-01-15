@@ -1,4 +1,4 @@
-import { horizontalSlider } from "../../Pages/horizontalSlider";
+import { horizontalSlider } from "../../Pages/HorizontalSlider";
 import { basePage } from "../../Pages/Base";
 import { LOCATORS } from "../../utils/locators";
 
