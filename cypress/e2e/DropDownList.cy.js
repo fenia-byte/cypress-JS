@@ -1,5 +1,5 @@
-import { dropdownList } from "../../Pages/DropDownList";
-import { basePage } from "../../Pages/Base";
+import { dropdownList } from "../Pages/DropDownList";
+import { basePage } from "../Pages/Base";
 describe ("dropdownList", () => {
 
     it("Verify link and default value", () => {

@@ -1,7 +1,7 @@
-import { disappearingElements } from "../../Pages/DisappearingElements";
-import { basePage } from "../../Pages/Base";
-import { COLORS } from "../../utils/colors";
-import { reloadAndCheck } from "../../utils/functions";
+import { disappearingElements } from "../Pages/DisappearingElements";
+import { basePage } from "../Pages/Base";
+import { COLORS } from "../utils/colors";
+import { reloadAndCheck } from "../utils/functions";
 
 describe("Disappearing_Elements", () => {
   beforeEach(() => {

@@ -1,6 +1,6 @@
-import { basePage } from "../../Pages/Base";
-import { emailGenerator } from "../../utils/functions";
-import { forgotPassword } from "../../Pages/ForgotPassword";
+import { basePage } from "../Pages/Base";
+import { emailGenerator } from "../utils/functions";
+import { forgotPassword } from "../Pages/ForgotPassword";
 
 let textName = "";
 const emailName = emailGenerator(10);

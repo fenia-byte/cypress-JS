@@ -1,5 +1,5 @@
-import { brokenImages } from "../../Pages/BrokenImages";
-import { basePage } from "../../Pages/Base";
+import { brokenImages } from "../Pages/BrokenImages";
+import { basePage } from "../Pages/Base";
 
 describe("Broken_Images", () => {
   it("Verify the functionality of Broken Images button", () => {

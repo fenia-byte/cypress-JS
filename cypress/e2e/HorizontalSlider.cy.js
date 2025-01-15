@@ -1,6 +1,6 @@
-import { horizontalSlider } from "../../Pages/HorizontalSlider";
-import { basePage } from "../../Pages/Base";
-import { LOCATORS } from "../../utils/locators";
+import { horizontalSlider } from "..Pages/HorizontalSlider";
+import { basePage } from "..Pages/Base";
+import { LOCATORS } from "..utils/locators";
 
 describe("horizontalSlider", () => {
   beforeEach(() => {
