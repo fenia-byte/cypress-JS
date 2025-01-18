@@ -1,6 +1,6 @@
-import { addRemoveElements } from "../../Pages/AddRemoveElements";
-import { basePage } from "../../Pages/Base";
-import { LOCATORS } from "../../utils/locators";
+import { addRemoveElements } from "../Pages/AddRemoveElements";
+import { basePage } from "../Pages/Base";
+import { LOCATORS } from "../utils/locators";
 
 describe("Add_Remove_Elements", () => {
   it("Verify the functionality of Add/Remove button", () => {

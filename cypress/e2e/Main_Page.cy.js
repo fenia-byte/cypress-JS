@@ -1,5 +1,5 @@
-import { basePage } from "../../Pages/Base";
-import { LOCATORS } from "../../utils/locators";
+import { basePage } from "../Pages/Base";
+import { LOCATORS } from "../utils/locators";
 
 describe("Main page testing", () => {
   it("Verify the functionality of Add/Remove button", () => {

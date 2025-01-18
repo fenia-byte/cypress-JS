@@ -1,5 +1,5 @@
-import { abTesting } from "../../Pages/A_B_Testing";
-import { basePage } from "../../Pages/Base";
+import { abTesting } from "../Pages/A_B_Testing";
+import { basePage } from "../Pages/Base";
 
 describe("A_B_Testing", () => {
   it("Verify content in the page", () => {
